@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27509" started-at="2018-06-29T15:02:24Z" finished-at="2018-06-29T15:02:51Z">
+  <suite name="Default suite" duration-ms="20000" started-at="2018-06-29T15:49:38Z" finished-at="2018-06-29T15:49:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27509" started-at="2018-06-29T15:02:24Z" finished-at="2018-06-29T15:02:51Z">
+    <test name="Default test" duration-ms="20000" started-at="2018-06-29T15:49:38Z" finished-at="2018-06-29T15:49:58Z">
       <class name="test.TestLogin">
-        <test-method status="FAIL" signature="clickLogoutBtn()[pri:0, instance:test.TestLogin@34cd072c]" name="clickLogoutBtn" duration-ms="4009" started-at="2018-06-29T15:02:24Z" finished-at="2018-06-29T15:02:28Z">
+        <test-method status="FAIL" signature="testLogin()[pri:0, instance:test.TestLogin@34cd072c]" name="testLogin" duration-ms="7" started-at="2018-06-29T15:49:38Z" finished-at="2018-06-29T15:49:38Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at pages.LoginPage.clickLogoutBtn(LoginPage.java:47)
-at test.TestLogin.clickLogoutBtn(TestLogin.java:26)
+at pages.LoginPage.signOn(LoginPage.java:70)
+at test.TestLogin.testLogin(TestLogin.java:19)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -43,15 +43,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickLogoutBtn -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:test.TestLogin@34cd072c]" name="testLogin" duration-ms="18420" started-at="2018-06-29T15:02:28Z" finished-at="2018-06-29T15:02:46Z">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testSummaryTitle()[pri:0, instance:test.TestLogin@34cd072c]" name="testSummaryTitle" duration-ms="5039" started-at="2018-06-29T15:02:46Z" finished-at="2018-06-29T15:02:51Z">
+        <test-method status="PASS" signature="testRegistration()[pri:0, instance:test.TestLogin@34cd072c]" name="testRegistration" duration-ms="19971" started-at="2018-06-29T15:49:38Z" finished-at="2018-06-29T15:49:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSummaryTitle -->
+        </test-method> <!-- testRegistration -->
       </class> <!-- test.TestLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

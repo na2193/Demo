@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\nasim.ahmed\AppData\Local\Temp\testng-eclipse--556954201\testng-customsuite.xml</span>
+                    <span>C:\Users\nasim.ahmed\AppData\Local\Temp\testng-eclipse--934332697\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestLogin" hash-for-method="clickLogoutBtn">clickLogoutBtn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestLogin" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,12 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestLogin" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestLogin" hash-for-method="testSummaryTitle">testSummaryTitle</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.TestLogin" hash-for-method="testRegistration">testRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -144,12 +139,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickLogoutBtn">
-                  </a> <!-- clickLogoutBtn -->
-                  <span class="method-name">clickLogoutBtn</span>
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at pages.LoginPage.clickLogoutBtn(LoginPage.java:47)
-	at test.TestLogin.clickLogoutBtn(TestLogin.java:26)
+	at pages.LoginPage.signOn(LoginPage.java:70)
+	at test.TestLogin.testLogin(TestLogin.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,16 +184,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSummaryTitle">
-                  </a> <!-- testSummaryTitle -->
-                  <span class="method-name">testSummaryTitle</span>
+                  <a name="testRegistration">
+                  </a> <!-- testRegistration -->
+                  <span class="method-name">testRegistration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,7 +194,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nasim.ahmed\AppData\Local\Temp\testng-eclipse--556954201\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nasim.ahmed\AppData\Local\Temp\testng-eclipse--934332697\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -255,24 +243,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLogin')
+data.setCell(0, 1, 'testRegistration')
 data.setCell(0, 2, 'test.TestLogin')
-data.setCell(0, 3, 18420);
+data.setCell(0, 3, 19971);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSummaryTitle')
+data.setCell(1, 1, 'testLogin')
 data.setCell(1, 2, 'test.TestLogin')
-data.setCell(1, 3, 5039);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickLogoutBtn')
-data.setCell(2, 2, 'test.TestLogin')
-data.setCell(2, 3, 4009);
+data.setCell(1, 3, 7);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -302,16 +286,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">clickLogoutBtn</span>
+                <span class="method-name">testLogin</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testLogin</span>
-                <span class="method-start">4023 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testSummaryTitle</span>
-                <span class="method-start">22448 ms</span>
+                <span class="method-name">testRegistration</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

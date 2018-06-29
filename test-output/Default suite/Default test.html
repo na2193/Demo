@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 29 11:02:24 EDT 2018</td>
+<td>Started on:</td><td>Fri Jun 29 11:49:38 EDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27509 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20000 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestLogin.clickLogoutBtn()'><b>clickLogoutBtn</b><br>Test class: test.TestLogin</td>
+<td title='test.TestLogin.testLogin()'><b>testLogin</b><br>Test class: test.TestLogin</td>
 <td><div><pre>java.lang.NullPointerException
-	at pages.LoginPage.clickLogoutBtn(LoginPage.java:47)
-	at test.TestLogin.clickLogoutBtn(TestLogin.java:26)
+	at pages.LoginPage.signOn(LoginPage.java:70)
+	at test.TestLogin.testLogin(TestLogin.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,8 +106,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div><a href='#' onClick='toggleBox("stack-trace832279283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace832279283'><pre>java.lang.NullPointerException
-	at pages.LoginPage.clickLogoutBtn(LoginPage.java:47)
-	at test.TestLogin.clickLogoutBtn(TestLogin.java:26)
+	at pages.LoginPage.signOn(LoginPage.java:70)
+	at test.TestLogin.testLogin(TestLogin.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,7 +134,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
+<td>0</td>
 <td>test.TestLogin@34cd072c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -145,14 +145,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestLogin.testLogin()'><b>testLogin</b><br>Test class: test.TestLogin</td>
+<td title='test.TestLogin.testRegistration()'><b>testRegistration</b><br>Test class: test.TestLogin</td>
 <td></td>
-<td>18</td>
-<td>test.TestLogin@34cd072c</td></tr>
-<tr>
-<td title='test.TestLogin.testSummaryTitle()'><b>testSummaryTitle</b><br>Test class: test.TestLogin</td>
-<td></td>
-<td>5</td>
+<td>19</td>
 <td>test.TestLogin@34cd072c</td></tr>
 </table><p>
 </body>
