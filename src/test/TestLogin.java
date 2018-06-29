@@ -11,13 +11,8 @@ public class TestLogin {
 	public void testLogin() throws InterruptedException {
 		Thread.sleep(5000);
 		loginPage.setUp();
-		loginPage.login("admin@phptravels.com", "demoadmin");
+		loginPage.registration("John", "Doe", "12354", "doe@email.com", "123 street", "city", "Virginia", "22315", "na123", "Nasim8055", "Nasim8055");
 	}
-	
-	@Test
-	public void testSummaryTitle() throws InterruptedException {
-		Thread.sleep(5000);
-		loginPage.validateBookinSummaryTitle("BOOKING SUMMARY");
-	}
+
 
 }

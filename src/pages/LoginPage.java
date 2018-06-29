@@ -14,32 +14,65 @@ public class LoginPage {
 		System.setProperty("webdriver.chrome.driver", "C:\\Code\\Jar Files\\browserDrivers\\browserDrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		PageFactory.initElements(driver, this);
-		driver.get("https://www.phptravels.net/admin");
+		driver.get("http://newtours.demoaut.com/");
 	}
 
-	@FindBy(xpath="/html/body/div/form[1]/div[1]/input[1]")
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a")
+	WebElement registerBtn;
+
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/input")
+	WebElement firstName;
+
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[3]/td[2]/input")
+	WebElement lastName;
+	
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[3]/td[2]/input")
+	WebElement phoneNum;
+	
+	@FindBy(xpath="//*[@id='userName']")
 	WebElement email;
 
-	@FindBy(xpath="/html/body/div/form[1]/div[1]/input[2]")
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[7]/td[2]/input")
+	WebElement address;
+	
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/input")
+	WebElement city;
+	
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[10]/td[2]/input")
+	WebElement state;
+	
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[11]/td[2]/input")
+	WebElement postalCode;
+	
+	@FindBy(xpath="//*[@id='email']")
+	WebElement username;
+	
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[15]/td[2]/input")
 	WebElement password;
-
-	@FindBy(xpath="/html/body/div/form[1]/button")
-	WebElement loginBtn;
 	
-	@FindBy(xpath="//*[@id='content']/div[2]/div[1]")
-	WebElement summaryTitle;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[16]/td[2]/input")
+	WebElement confirmPassword;
 	
-
-	public void login(String strEmail, String strPassword) {
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[18]/td/input")
+	WebElement submitBtn;
+	
+	public void registration(String strFN, String strLN, String strPhone, String strEmail, String strAddress, String strCity, String strState, String strPostalCode,
+			String strUsername, String strPassword, String strConfirmPassword) {
+		registerBtn.click();
+		firstName.sendKeys(strFN);
+		lastName.sendKeys(strLN);
+		phoneNum.sendKeys(strPhone);
 		email.sendKeys(strEmail);
+		address.sendKeys(strAddress);
+		city.sendKeys(strCity);
+		state.sendKeys(strState);
+		postalCode.sendKeys(strPostalCode);
+		username.sendKeys(strUsername);
 		password.sendKeys(strPassword);
-		loginBtn.click();
+		confirmPassword.sendKeys(strConfirmPassword);
+		submitBtn.click();
 	}
-	
-	public void validateBookinSummaryTitle(String expectedText) {
-		String actualText = summaryTitle.getText();
-		Assert.assertEquals(actualText, expectedText);
-	}
+
 }
 
 
