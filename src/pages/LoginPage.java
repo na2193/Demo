@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class LoginPage {
 	WebDriver driver;
@@ -51,6 +52,27 @@ public class LoginPage {
 	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[4]/td[2]/div/input")
 	WebElement signOnBtn;
 	
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[2]")
+	WebElement oneWayRB;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[3]/td[2]/b/select")
+	WebElement passengers;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[4]/td[2]/select")
+	WebElement departingFrom;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[5]/td[2]/select[1]")
+	WebElement onMonth;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[5]/td[2]/select[2]")
+	WebElement onDay;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[6]/td[2]/select")
+	WebElement arrivingIn;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[7]/td[2]/select[1]")
+	WebElement returningMonth;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[7]/td[2]/select[2]")
+	WebElement returningDay;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/font/font/input[2]")
+	WebElement serviceClass;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[14]/td/input")
+	WebElement continueBtn;
+	
 	public void registration(String strFN, String strLN, String strPhone, String strEmail, String strAddress, String strCity, String strState, String strPostalCode,
 			String strUsername, String strPassword, String strConfirmPassword) {
 		registerBtn.click();
@@ -77,6 +99,25 @@ public class LoginPage {
 
 	public void closeBrowser() {
 		driver.close();
+	}
+	
+	public void flightDetails(String passengersUser, String departingFromUser, String onMonthUser, String onDayUser, String arrivingInUser, 
+			String returningMonthUser, String returningDayUser) {
+		oneWayRB.click();
+		selectFromDropDownList(passengers, passengersUser);
+		selectFromDropDownList(departingFrom, departingFromUser); 
+		selectFromDropDownList(onMonth, onMonthUser); // value is in number 1 for january, etc
+		selectFromDropDownList(onDay, onDayUser);
+		selectFromDropDownList(arrivingIn, arrivingInUser);
+		selectFromDropDownList(returningMonth, returningMonthUser);
+		selectFromDropDownList(returningDay, returningDayUser);
+		serviceClass.click(); // first class
+		continueBtn.click();
+	}
+	
+	public void selectFromDropDownList(WebElement locator, String valueName) {
+		Select dropDown = new Select(locator);
+		dropDown.selectByValue(valueName);
 	}
 }
 

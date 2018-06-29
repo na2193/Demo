@@ -25,10 +25,13 @@ public class TestLogin {
 		loginPage.signOn("na098", "Nasim8055");
 	}
 	
-	@AfterTest
-	public void closeBrowser() {
-		loginPage.closeBrowser();
+	@Test(priority=3)
+	public void testFlightDetails() {
+		loginPage.flightDetails("3", "Frankfurt", "7", "21", "Acapulco", "8", "21");
 	}
-
-
+	
+//	@AfterTest
+//	public void closeBrowser() {
+//		loginPage.closeBrowser();
+//	}
 }
