@@ -20,5 +20,9 @@ public class TestLogin {
 		loginPage.validateBookinSummaryTitle("BOOKING SUMMARY");
 	}
 	
-
+	@Test 
+	public void clickBookings() throws InterruptedException {
+		Thread.sleep(5000);
+		loginPage.clickBookings();
+	}
 }

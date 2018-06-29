@@ -28,6 +28,9 @@ public class LoginPage {
 	
 	@FindBy(xpath="//*[@id='content']/div[2]/div[1]")
 	WebElement summaryTitle;
+	
+	@FindBy(xpath="//*[@id='content']/div[1]/div[2]/form/button")
+	WebElement bookingsBtn;
 
 	public void login(String strEmail, String strPassword) {
 		email.sendKeys(strEmail);
@@ -38,6 +41,10 @@ public class LoginPage {
 	public void validateBookinSummaryTitle(String expectedText) {
 		String actualText = summaryTitle.getText();
 		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	public void clickBookings() {
+		bookingsBtn.click();
 	}
 }
 
