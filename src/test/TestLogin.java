@@ -35,6 +35,13 @@ public class TestLogin {
 		loginPage.selectFlightPrices();
 	}
 	
+	@Test(priority=5)
+	public void signOff() {
+		loginPage.signOff();
+	}
+	
+	
+	
 //	@AfterTest
 //	public void closeBrowser() {
 //		loginPage.closeBrowser();

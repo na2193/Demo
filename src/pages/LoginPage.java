@@ -79,6 +79,8 @@ public class LoginPage {
 	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/p/input")
 	WebElement continueDepartureBtn;
 	
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/a")
+	WebElement signOffBtn;
 	
 	public void registration(String strFN, String strLN, String strPhone, String strEmail, String strAddress, String strCity, String strState, String strPostalCode,
 			String strUsername, String strPassword, String strConfirmPassword) {
@@ -131,6 +133,10 @@ public class LoginPage {
 		departureDetail.click();
 		returnDetail.click();
 		continueDepartureBtn.click();
+	}
+	
+	public void signOff() {
+		signOffBtn.click();
 	}
 }
 
