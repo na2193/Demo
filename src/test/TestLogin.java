@@ -21,8 +21,8 @@ public class TestLogin {
 	}
 	
 	@Test 
-	public void clickBookings() throws InterruptedException {
+	public void clickLogoutBtn() throws InterruptedException {
 		Thread.sleep(4000);
-		loginPage.clickBookings();
+		loginPage.clickLogoutBtn();
 	}
 }

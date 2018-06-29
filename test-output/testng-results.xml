@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20681" started-at="2018-06-29T13:53:27Z" finished-at="2018-06-29T13:53:47Z">
+  <suite name="Default suite" duration-ms="27509" started-at="2018-06-29T15:02:24Z" finished-at="2018-06-29T15:02:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20681" started-at="2018-06-29T13:53:27Z" finished-at="2018-06-29T13:53:47Z">
+    <test name="Default test" duration-ms="27509" started-at="2018-06-29T15:02:24Z" finished-at="2018-06-29T15:02:51Z">
       <class name="test.TestLogin">
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:test.TestLogin@34cd072c]" name="testLogin" duration-ms="15607" started-at="2018-06-29T13:53:27Z" finished-at="2018-06-29T13:53:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="FAIL" signature="testSummaryTitle()[pri:0, instance:test.TestLogin@34cd072c]" name="testSummaryTitle" duration-ms="5052" started-at="2018-06-29T13:53:42Z" finished-at="2018-06-29T13:53:47Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Booking Summary] but found [BOOKING SUMMARY]]]>
-            </message>
+        <test-method status="FAIL" signature="clickLogoutBtn()[pri:0, instance:test.TestLogin@34cd072c]" name="clickLogoutBtn" duration-ms="4009" started-at="2018-06-29T15:02:24Z" finished-at="2018-06-29T15:02:28Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Booking Summary] but found [BOOKING SUMMARY]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at pages.LoginPage.validateBookinSummaryTitle(LoginPage.java:40)
-at test.TestLogin.testSummaryTitle(TestLogin.java:20)
+              <![CDATA[java.lang.NullPointerException
+at pages.LoginPage.clickLogoutBtn(LoginPage.java:47)
+at test.TestLogin.clickLogoutBtn(TestLogin.java:26)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,11 +40,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLogoutBtn -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:test.TestLogin@34cd072c]" name="testLogin" duration-ms="18420" started-at="2018-06-29T15:02:28Z" finished-at="2018-06-29T15:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testSummaryTitle()[pri:0, instance:test.TestLogin@34cd072c]" name="testSummaryTitle" duration-ms="5039" started-at="2018-06-29T15:02:46Z" finished-at="2018-06-29T15:02:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSummaryTitle -->
       </class> <!-- test.TestLogin -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
