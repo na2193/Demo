@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
@@ -8,16 +9,24 @@ import pages.LoginPage;
 public class TestLogin {	
 	LoginPage loginPage = new LoginPage();
 	
-	@Test
+	@BeforeTest
+	public void setUp() {
+		loginPage.setUp();
+	}
+	
+	@Test(priority=1)
 	public void testRegistration() throws InterruptedException {
 		Thread.sleep(5000);
-		loginPage.setUp();
-		loginPage.registration("John", "Doe", "12354", "doe@email.com", "123 street", "city", "Virginia", "22315", "na123", "Nasim8055", "Nasim8055");
+		loginPage.registration("John", "Doe", "12354", "doe@email.com", "123 street", "city", "Virginia", "22315", "na098", "Nasim8055", "Nasim8055");
+	}
+	
+	@Test(priority=2)
+	public void testLogin() {
+		loginPage.signOn("na098", "Nasim8055");
 	}
 	
 	@AfterTest
-	public void closeBrowser()
-	{
+	public void closeBrowser() {
 		loginPage.closeBrowser();
 	}
 

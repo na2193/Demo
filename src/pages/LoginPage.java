@@ -42,12 +42,14 @@ public class LoginPage {
 	WebElement confirmPassword;
 	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[18]/td/input")
 	WebElement submitBtn;
-	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/p[2]/font/a[1]")
-	WebElement signOnBtn;
-	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[1]/td[2]/input")
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[1]/td[2]/font/a")
+	WebElement homeBtn;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[2]/td[2]/input")
 	WebElement usernameSignOn;
-	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/input")
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[3]/td[2]/input")
 	WebElement passwordSignOn;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[4]/td[2]/div/input")
+	WebElement signOnBtn;
 	
 	public void registration(String strFN, String strLN, String strPhone, String strEmail, String strAddress, String strCity, String strState, String strPostalCode,
 			String strUsername, String strPassword, String strConfirmPassword) {
@@ -67,9 +69,10 @@ public class LoginPage {
 	}
 	
 	public void signOn(String strUsername, String strPassword) {
-		signOnBtn.click();
+		homeBtn.click();
 		usernameSignOn.sendKeys(strUsername);
 		passwordSignOn.sendKeys(strPassword);
+		signOnBtn.click();
 	}
 
 	public void closeBrowser() {
