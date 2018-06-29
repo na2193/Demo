@@ -29,8 +29,6 @@ public class LoginPage {
 	@FindBy(xpath="//*[@id='content']/div[2]/div[1]")
 	WebElement summaryTitle;
 	
-	@FindBy(xpath="/html/body/div[2]/aside/div/div[2]/div/div[2]/div/a")
-	WebElement logoutBtn;
 
 	public void login(String strEmail, String strPassword) {
 		email.sendKeys(strEmail);
@@ -41,13 +39,6 @@ public class LoginPage {
 	public void validateBookinSummaryTitle(String expectedText) {
 		String actualText = summaryTitle.getText();
 		Assert.assertEquals(actualText, expectedText);
-	}
-	
-	public void clickLogoutBtn() throws InterruptedException {
-		if(logoutBtn.isDisplayed())
-			logoutBtn.click();
-		else
-			System.out.println("CANNOT CLICK ON LOGOUT BUTTON!");
 	}
 }
 

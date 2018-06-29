@@ -19,10 +19,5 @@ public class TestLogin {
 		Thread.sleep(5000);
 		loginPage.validateBookinSummaryTitle("BOOKING SUMMARY");
 	}
-	
-	@Test 
-	public void clickLogoutBtn() throws InterruptedException {
-		Thread.sleep(4000);
-		loginPage.clickLogoutBtn();
-	}
+
 }
