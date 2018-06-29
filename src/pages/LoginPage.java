@@ -72,6 +72,13 @@ public class LoginPage {
 	WebElement serviceClass;
 	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[14]/td/input")
 	WebElement continueBtn;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table[1]/tbody/tr[7]/td[1]/input")
+	WebElement departureDetail;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table[2]/tbody/tr[9]/td[1]/input")
+	WebElement returnDetail;
+	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/p/input")
+	WebElement continueDepartureBtn;
+	
 	
 	public void registration(String strFN, String strLN, String strPhone, String strEmail, String strAddress, String strCity, String strState, String strPostalCode,
 			String strUsername, String strPassword, String strConfirmPassword) {
@@ -106,7 +113,7 @@ public class LoginPage {
 		oneWayRB.click();
 		selectFromDropDownList(passengers, passengersUser);
 		selectFromDropDownList(departingFrom, departingFromUser); 
-		selectFromDropDownList(onMonth, onMonthUser); // value is in number 1 for january, etc
+		selectFromDropDownList(onMonth, onMonthUser); // value is in number (1 for january, etc)
 		selectFromDropDownList(onDay, onDayUser);
 		selectFromDropDownList(arrivingIn, arrivingInUser);
 		selectFromDropDownList(returningMonth, returningMonthUser);
@@ -118,6 +125,12 @@ public class LoginPage {
 	public void selectFromDropDownList(WebElement locator, String valueName) {
 		Select dropDown = new Select(locator);
 		dropDown.selectByValue(valueName);
+	}
+	
+	public void selectFlightPrices() {
+		departureDetail.click();
+		returnDetail.click();
+		continueDepartureBtn.click();
 	}
 }
 

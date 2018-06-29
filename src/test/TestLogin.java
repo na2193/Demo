@@ -30,6 +30,11 @@ public class TestLogin {
 		loginPage.flightDetails("3", "Frankfurt", "7", "21", "Acapulco", "8", "21");
 	}
 	
+	@Test(priority=4) 
+	public void testselectFlightPrices() {
+		loginPage.selectFlightPrices();
+	}
+	
 //	@AfterTest
 //	public void closeBrowser() {
 //		loginPage.closeBrowser();
