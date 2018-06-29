@@ -72,6 +72,9 @@ public class LoginPage {
 		passwordSignOn.sendKeys(strPassword);
 	}
 
+	public void closeBrowser() {
+		driver.close();
+	}
 }
 
 
