@@ -17,7 +17,7 @@ public class TestLogin {
 	@Test
 	public void testSummaryTitle() throws InterruptedException {
 		Thread.sleep(5000);
-		loginPage.validateBookinSummaryTitle("Booking Summary");
+		loginPage.validateBookinSummaryTitle("BOOKING SUMMARY");
 	}
 	
 
