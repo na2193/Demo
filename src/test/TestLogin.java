@@ -22,7 +22,7 @@ public class TestLogin {
 	
 	@Test 
 	public void clickBookings() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		loginPage.clickBookings();
 	}
 }
