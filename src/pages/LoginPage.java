@@ -47,7 +47,7 @@ public class LoginPage {
 		if(logoutBtn.isDisplayed())
 			logoutBtn.click();
 		else
-			System.out.println("CANNOT CLICK ON LOGOUT BUTTON");
+			System.out.println("CANNOT CLICK ON LOGOUT BUTTON!");
 	}
 }
 
