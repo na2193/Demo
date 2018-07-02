@@ -2,11 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-  <test thread-count="5" name="Login">
-    <classes>
-      <class name="test.TestLogin"/>
-    </classes>
-  </test> <!-- Test -->
- 
-  
+	<test thread-count="5" name="Login">
+		<classes>
+			<class name="test.TestLogin" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="JUnitTests" junit="true">
+		<classes>
+			<class name="application.TestOperations" />
+		</classes>
+	</test>
+
 </suite> <!-- Suite -->
