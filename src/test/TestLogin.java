@@ -40,10 +40,8 @@ public class TestLogin {
 		loginPage.signOff();
 	}
 	
-	
-	
-//	@AfterTest
-//	public void closeBrowser() {
-//		loginPage.closeBrowser();
-//	}
+	@AfterTest
+	public void closeBrowser() {
+		loginPage.closeBrowser();
+	}
 }
