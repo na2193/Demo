@@ -42,7 +42,6 @@ public class TestLogin {
 	
 	@AfterTest
 	public void closeBrowser() {
-		// closing the browser
 		loginPage.closeBrowser();
 	}
 }
