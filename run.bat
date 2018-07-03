@@ -1,4 +1,5 @@
 cd C:\Users\nasim.ahmed\Desktop\Demo\src\application
+java Operation.java
 javac TestOperations.java
 
 set projectLocation=C:\Users\nasim.ahmed\Desktop\Demo
