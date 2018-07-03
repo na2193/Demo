@@ -8,7 +8,7 @@ set classpath=%projectLocation%\bin;%projectLocation%\lib\*
 echo Class Path = %classpath%
 
 cd C:\Users\nasim.ahmed\Desktop\Demo\src\application
-javac Operation.Java
+javac Operation.java
 javac TestOperations.java
 
 cd %projectLocation%
