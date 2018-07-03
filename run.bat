@@ -1,3 +1,6 @@
+cd C:\Users\nasim.ahmed\Desktop\Demo\src\application
+javac TestOperations.java
+
 set projectLocation=C:\Users\nasim.ahmed\Desktop\Demo
 cd %projectLocation%
 echo Project Location = %projectLocation%
