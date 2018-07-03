@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+
 public class TestOperations {
 	private static final double DELTA = 1e-10;
 	private Operation op = new Operation();
