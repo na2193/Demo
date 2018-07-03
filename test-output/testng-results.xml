@@ -2,64 +2,72 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31600" started-at="2018-07-02T20:32:15Z" finished-at="2018-07-02T20:32:46Z">
+  <suite name="Suite" duration-ms="217" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:16Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="31412" started-at="2018-07-02T20:32:15Z" finished-at="2018-07-02T20:32:46Z">
+    <test name="JUnitTests" duration-ms="217" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:16Z">
+      <class name="application.TestOperations">
+        <test-method status="PASS" signature="testAddition()" name="testAddition" duration-ms="27" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddition -->
+        <test-method status="PASS" signature="testDivdieWithZero()" name="testDivdieWithZero" duration-ms="22" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivdieWithZero -->
+        <test-method status="PASS" signature="testMultiply()" name="testMultiply" duration-ms="28" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply -->
+        <test-method status="PASS" signature="testDivide()" name="testDivide" duration-ms="25" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivide -->
+        <test-method status="PASS" signature="testSubtraction()" name="testSubtraction" duration-ms="30" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtraction -->
+      </class> <!-- application.TestOperations -->
+    </test> <!-- JUnitTests -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="79458" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:36:36Z">
+    <groups>
+    </groups>
+    <test name="MercuryTest" duration-ms="79458" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:36:36Z">
       <class name="test.TestLogin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestLogin@3043fe0e]" name="setUp" is-config="true" duration-ms="18827" started-at="2018-07-02T20:32:15Z" finished-at="2018-07-02T20:32:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestLogin@217ed35e]" name="setUp" is-config="true" duration-ms="6877" started-at="2018-07-03T12:35:16Z" finished-at="2018-07-03T12:35:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testRegistration()[pri:1, instance:test.TestLogin@3043fe0e]" name="testRegistration" duration-ms="7409" started-at="2018-07-02T20:32:33Z" finished-at="2018-07-02T20:32:41Z">
+        <test-method status="PASS" signature="testRegistration()[pri:1, instance:test.TestLogin@217ed35e]" name="testRegistration" duration-ms="21839" started-at="2018-07-03T12:35:23Z" finished-at="2018-07-03T12:35:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="testLogin()[pri:2, instance:test.TestLogin@3043fe0e]" name="testLogin" duration-ms="1925" started-at="2018-07-02T20:32:41Z" finished-at="2018-07-02T20:32:43Z">
+        <test-method status="PASS" signature="testLogin()[pri:2, instance:test.TestLogin@217ed35e]" name="testLogin" duration-ms="48194" started-at="2018-07-03T12:35:45Z" finished-at="2018-07-03T12:36:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testFlightDetails()[pri:3, instance:test.TestLogin@3043fe0e]" name="testFlightDetails" duration-ms="1513" started-at="2018-07-02T20:32:43Z" finished-at="2018-07-02T20:32:44Z">
+        <test-method status="PASS" signature="testFlightDetails()[pri:3, instance:test.TestLogin@217ed35e]" name="testFlightDetails" duration-ms="1103" started-at="2018-07-03T12:36:33Z" finished-at="2018-07-03T12:36:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFlightDetails -->
-        <test-method status="PASS" signature="testselectFlightPrices()[pri:4, instance:test.TestLogin@3043fe0e]" name="testselectFlightPrices" duration-ms="754" started-at="2018-07-02T20:32:44Z" finished-at="2018-07-02T20:32:45Z">
+        <test-method status="PASS" signature="testselectFlightPrices()[pri:4, instance:test.TestLogin@217ed35e]" name="testselectFlightPrices" duration-ms="712" started-at="2018-07-03T12:36:34Z" finished-at="2018-07-03T12:36:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testselectFlightPrices -->
-        <test-method status="PASS" signature="signOff()[pri:5, instance:test.TestLogin@3043fe0e]" name="signOff" duration-ms="573" started-at="2018-07-02T20:32:45Z" finished-at="2018-07-02T20:32:46Z">
+        <test-method status="PASS" signature="signOff()[pri:5, instance:test.TestLogin@217ed35e]" name="signOff" duration-ms="453" started-at="2018-07-03T12:36:35Z" finished-at="2018-07-03T12:36:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signOff -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.TestLogin@3043fe0e]" name="closeBrowser" is-config="true" duration-ms="383" started-at="2018-07-02T20:32:46Z" finished-at="2018-07-02T20:32:46Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test.TestLogin@217ed35e]" name="closeBrowser" is-config="true" duration-ms="250" started-at="2018-07-03T12:36:36Z" finished-at="2018-07-03T12:36:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TestLogin -->
-    </test> <!-- Login -->
-    <test name="JUnitTests" duration-ms="125" started-at="2018-07-02T20:32:46Z" finished-at="2018-07-02T20:32:46Z">
-      <class name="application.TestOperations">
-        <test-method status="PASS" signature="testSubtraction()" name="testSubtraction" duration-ms="47" started-at="2018-07-02T20:32:46Z" finished-at="2018-07-02T20:32:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSubtraction -->
-        <test-method status="PASS" signature="testAddition()" name="testAddition" duration-ms="15" started-at="2018-07-02T20:32:46Z" finished-at="2018-07-02T20:32:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddition -->
-        <test-method status="PASS" signature="testDivide()" name="testDivide" duration-ms="31" started-at="2018-07-02T20:32:46Z" finished-at="2018-07-02T20:32:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDivide -->
-        <test-method status="PASS" signature="testDivdieWithZero()" name="testDivdieWithZero" duration-ms="31" started-at="2018-07-02T20:32:46Z" finished-at="2018-07-02T20:32:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDivdieWithZero -->
-        <test-method status="PASS" signature="testMultiply()" name="testMultiply" duration-ms="47" started-at="2018-07-02T20:32:46Z" finished-at="2018-07-02T20:32:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMultiply -->
-      </class> <!-- application.TestOperations -->
-    </test> <!-- JUnitTests -->
-  </suite> <!-- Suite -->
+    </test> <!-- MercuryTest -->
+  </suite> <!-- Suite (0) -->
+  <suite name="MultipleSuite" duration-ms="0" started-at="2018-07-03T12:36:36Z" finished-at="2018-07-03T12:36:36Z">
+    <groups>
+    </groups>
+  </suite> <!-- MultipleSuite -->
 </testng-results>
