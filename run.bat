@@ -3,7 +3,7 @@ cd %projectLocation%
 
 set classpath=%projectLocation%\bin;%projectLocation%\lib\*
 
-javac -d bin %projectLocation%\src\application*.java
+javac -d bin %projectLocation%\src\application\*.java
 
 cd %projectLocation%
 java org.testng.TestNG %projectLocation%\testng.xml
