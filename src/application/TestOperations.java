@@ -50,5 +50,5 @@ public class TestOperations {
 		num1 = 40;
 		num2 = 0;
 		double actualDivide = op.divide(num1, num2);
-	}
+	
 }
