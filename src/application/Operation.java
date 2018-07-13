@@ -19,6 +19,5 @@ public class Operation {
 		else
 			return num1 / num2;
 	}
-	
-}
+
 
